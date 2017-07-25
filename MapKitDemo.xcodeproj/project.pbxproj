@@ -14,6 +14,9 @@
 		0B373E1D1F27A59600D597B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B373E1B1F27A59600D597B3 /* LaunchScreen.storyboard */; };
 		0B373E281F27A59600D597B3 /* MapKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B373E271F27A59600D597B3 /* MapKitDemoTests.swift */; };
 		0B373E331F27A59600D597B3 /* MapKitDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B373E321F27A59600D597B3 /* MapKitDemoUITests.swift */; };
+		0B373E421F27A6BF00D597B3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B373E411F27A6BF00D597B3 /* MapKit.framework */; };
+		0B373E441F27A95200D597B3 /* myLocAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B373E431F27A95200D597B3 /* myLocAnnotation.swift */; };
+		0B373E481F27CFE200D597B3 /* BankLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B373E471F27CFE200D597B3 /* BankLocationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		0B373E2E1F27A59600D597B3 /* MapKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B373E321F27A59600D597B3 /* MapKitDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitDemoUITests.swift; sourceTree = "<group>"; };
 		0B373E341F27A59600D597B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B373E411F27A6BF00D597B3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0B373E431F27A95200D597B3 /* myLocAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myLocAnnotation.swift; sourceTree = "<group>"; };
+		0B373E471F27CFE200D597B3 /* BankLocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BankLocationModel.swift; path = ../BankLocationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B373E421F27A6BF00D597B3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,7 @@
 				0B373E261F27A59600D597B3 /* MapKitDemoTests */,
 				0B373E311F27A59600D597B3 /* MapKitDemoUITests */,
 				0B373E101F27A59500D597B3 /* Products */,
+				0B373E401F27A6BF00D597B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +105,10 @@
 		0B373E111F27A59500D597B3 /* MapKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0B373E471F27CFE200D597B3 /* BankLocationModel.swift */,
 				0B373E121F27A59500D597B3 /* AppDelegate.swift */,
 				0B373E141F27A59500D597B3 /* ViewController.swift */,
+				0B373E431F27A95200D597B3 /* myLocAnnotation.swift */,
 				0B373E161F27A59500D597B3 /* Main.storyboard */,
 				0B373E191F27A59600D597B3 /* Assets.xcassets */,
 				0B373E1B1F27A59600D597B3 /* LaunchScreen.storyboard */,
@@ -123,6 +133,14 @@
 				0B373E341F27A59600D597B3 /* Info.plist */,
 			);
 			path = MapKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		0B373E401F27A6BF00D597B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B373E411F27A6BF00D597B3 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +213,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2ENFGG8937;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					0B373E221F27A59600D597B3 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -262,7 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B373E481F27CFE200D597B3 /* BankLocationModel.swift in Sources */,
 				0B373E151F27A59500D597B3 /* ViewController.swift in Sources */,
+				0B373E441F27A95200D597B3 /* myLocAnnotation.swift in Sources */,
 				0B373E131F27A59500D597B3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
